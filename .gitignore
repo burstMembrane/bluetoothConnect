@@ -3,3 +3,4 @@ __pycache__
 *.tar.gz
 pybluez-master/
 Pipfile.lock
+bt-hid-proxy/
