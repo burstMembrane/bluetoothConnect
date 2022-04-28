@@ -9,9 +9,6 @@ from time import sleep
 import subprocess as sp
 from argparse import ArgumentParser
 
-config = json.load(open("config.json"))
-device_name = config["deviceName"]
-
 
 def join_values(key, arr: list = []):
     """join a list of returned values to a single string with a coimma delimiter"""

@@ -1,13 +1,12 @@
 #!/usr/bin/bash
 # install lib-bluetooth
 sudo apt install libbluetooth-dev -y
-# get the tar from pyblues
+# get the tar from pybluez
 wget -c https://github.com/pybluez/pybluez/archive/master.tar.gz -O - | tar -xz
 # untar
-tar -xf master.tar.gz
 cd pybluez-master
 # install
-sudo python setup.py install
+sudo python3 setup.py install
 
 PYCMD=$(cat <<EOF
 try:
